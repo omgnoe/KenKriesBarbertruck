@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ken Kries BarberTruck - Mobile Barbershop Luxembourg</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#home" class="logo" aria-label="Home">
+        <img src="logo.png" alt="Ken Kries BarberTruck"/>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="only-mobile"><a class="mobile-cta" href="#booking">BOOK NOW</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#gallery">Video</a></li>
+        <li><a href="#album">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://kkbt.simplybook.it/v2/#packages" target="_blank" rel="noopener">Packages</a></li>
+        <li><a href="https://kkbt.simplybook.it/v2/#client/bookings/type/upcoming" target="_blank" rel="noopener">My Bookings</a></li>
+      </ul>
+
+      <a href="#booking" class="book-now-btn" aria-label="Book Now">BOOK NOW</a>
+
+      <a href="tel:+352691111463" class="phone-btn" aria-label="Call us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>LUXEMBOURG'S FIRST</h1>
+        <h2>MOBILE BARBERSHOP</h2>
+        <p>Premium grooming services that come to you</p>
+        <a href="#booking" class="cta-button">BOOK YOUR APPOINTMENT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>EXPERIENCE MEETS INNOVATION</h2>
+          <p>Ken Kries brings over 15 years of hairdressing expertise directly to you with Luxembourg's first mobile barbershop. Combining traditional craftsmanship with modern convenience.</p>
+          <div class="about-stats">
+            <div class="stat"><h3>15+</h3><p>Years Experience</p></div>
+            <div class="stat"><h3>8</h3><p>Years BarberTruck</p></div>
+            <div class="stat"><h3>1st</h3><p>In Luxembourg</p></div>
+          </div>
+        </div>
+        <div class="about-portrait">
+          <img src="photo8.jpg" alt="Ken Kries portrait"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services with Tabs -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">SERVICES</h2>
+
+      <div class="tabs">
+        <button class="tab-button active" data-tab="grooming">Hair &amp; Grooming</button>
+        <button class="tab-button" data-tab="specials">Specials</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-grooming">
+        <div class="services-grid">
+          <div class="service-card"><div class="service-number">N1</div><h3>THE CLINTON</h3><p>35min (wash, cut, wash, hairstyling) with scissors</p><div class="service-price">EUR 50</div></div>
+          <div class="service-card"><div class="service-number">N2</div><h3>THE OBAMA</h3><p>35min (wash, cut, wash, hairstyling) with clipper</p><div class="service-price">EUR 45</div></div>
+          <div class="service-card"><div class="service-number">N3</div><h3>THE BALD</h3><p>with clipper from 1mm to 15mm/wash</p><div class="service-price">EUR 35</div></div>
+          <div class="service-card"><div class="service-number">N4</div><h3>THE BOY</h3><p>haircut/styling &lt; 10 years</p><div class="service-price">EUR 40</div></div>
+          <div class="service-card"><div class="service-number">N5</div><h3>THE GRANT</h3><p>beard trim/contours</p><div class="service-price">EUR 40</div></div>
+          <div class="service-card"><div class="service-number">N6</div><h3>THE KENNEDY</h3><p>classic shave</p><div class="service-price">EUR 40</div></div>
+          <div class="service-card"><div class="service-number">N7</div><h3>THE ROOSEVELT</h3><p>moustache</p><div class="service-price">EUR 15</div></div>
+          <div class="service-card"><div class="service-number">N8</div><h3>THE TRUMP</h3><p>scalp treatment</p><div class="service-price">EUR 15</div></div>
+          <div class="service-card"><div class="service-number">N9</div><h3>THE LINCOLN</h3><p>nose/ears/eyebrows</p><div class="service-price">EUR 15</div></div>
+          <div class="service-card"><div class="service-number">N10</div><h3>THE BUTLER</h3><p>Shoe treatment</p><div class="service-price">EUR 15</div></div>
+          <div class="service-card"><div class="service-number">N15</div><h3>THE FIRST LADY</h3><p>EUR 50 (Brushing Bar) – additional 15€ for extra length</p><div class="service-price">EUR 50</div></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-specials">
+        <div class="services-grid">
+          <div class="service-card service-card-featured"><div class="service-number">N11</div><h3>FOR EVENTS</h3><p>(wedding, after-works...), 4 hours. For further info please contact me</p><div class="service-price">EUR 600</div></div>
+          <div class="service-card service-card-featured"><div class="service-number">N12</div><h3>VIP SERVICE</h3><p>Choose your service (home, hotel, airport,...) 7/7. Pre-booking at least 24h before if available</p><div class="service-price">EUR 150</div></div>
+          <div class="service-card"><div class="service-number">N13</div><h3>GIFT CARD</h3><p>Choose your value</p><div class="service-price">—</div></div>
+          <div class="service-card"><div class="service-number">N14</div><h3>MEMBERSHIP</h3><p>Choose your card</p><div class="service-price">—</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section id="locations" class="locations">
+    <div class="container">
+      <h2 class="section-title">WHERE TO FIND ME THIS WEEK</h2>
+
+      <div class="location-info-block">
+        <div class="info-icon">ℹ️</div>
+        <div class="info-content">
+          <h3>Current Schedule</h3>
+          <p>Currently, KKBT is at <strong>Meat Me</strong> only on <strong>Wednesdays and Fridays</strong>.</p>
+          <p>However, we are flexible! Call us at <a href="tel:+352691111463">+352 691 111 463</a> to arrange a flexible appointment that suits your schedule.</p>
+        </div>
+      </div>
+
+      <div class="location-grid">
+        <article class="location-card"><div class="day">MON</div><div class="place">By Appointment</div><div class="address">Call to schedule</div></article>
+        <article class="location-card"><div class="day">TUE</div><div class="place">By Appointment</div><div class="address">Call to schedule</div></article>
+        <article class="location-card location-card-active"><div class="day">WED</div><div class="place">Meat Me</div><div class="address">261 Rte d'Arlon</div></article>
+        <article class="location-card"><div class="day">THU</div><div class="place">By Appointment</div><div class="address">Call to schedule</div></article>
+        <article class="location-card location-card-active"><div class="day">FRI</div><div class="place">Meat Me</div><div class="address">261 Rte d'Arlon</div></article>
+        <!-- NEW: Saturday -->
+        <article class="location-card"><div class="day">SAT</div><div class="place">By Appointment</div><div class="address">Call to schedule</div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">VIDEO GALLERY</h2>
+      <div class="video-grid">
+        <div class="video-item" data-yt="4cle_SRSymA" data-title="BarberTruck – Clip 1">
+          <button class="video-poster" aria-label="Play BarberTruck – Clip 1">
+            <img src="https://i.ytimg.com/vi/4cle_SRSymA/hqdefault.jpg" alt="BarberTruck – Clip 1"/>
+            <span class="play">▶</span><span class="vtitle">BarberTruck – Clip 1</span>
+          </button>
+        </div>
+        <div class="video-item" data-yt="1eFJBPJNlTs" data-title="BarberTruck – Clip 2">
+          <button class="video-poster" aria-label="Play BarberTruck – Clip 2">
+            <img src="https://i.ytimg.com/vi/1eFJBPJNlTs/hqdefault.jpg" alt="BarberTruck – Clip 2"/>
+            <span class="play">▶</span><span class="vtitle">BarberTruck – Clip 2</span>
+          </button>
+        </div>
+        <div class="video-item" data-yt="aA_z_NikV1Q" data-title="BarberTruck – Clip 3">
+          <button class="video-poster" aria-label="Play BarberTruck – Clip 3">
+            <img src="https://i.ytimg.com/vi/aA_z_NikV1Q/hqdefault.jpg" alt="BarberTruck – Clip 3"/>
+            <span class="play">▶</span><span class="vtitle">BarberTruck – Clip 3</span>
+          </button>
+        </div>
+        <div class="video-item" data-yt="ui7UFVOO8_Y" data-title="BarberTruck – Clip 4">
+          <button class="video-poster" aria-label="Play BarberTruck – Clip 4">
+            <img src="https://i.ytimg.com/vi/ui7UFVOO8_Y/hqdefault.jpg" alt="BarberTruck – Clip 4"/>
+            <span class="play">▶</span><span class="vtitle">BarberTruck – Clip 4</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Album -->
+  <section id="album" class="album">
+    <div class="container">
+      <h2 class="section-title">PHOTO IMPRESSIONS</h2>
+      <div class="masonry">
+        <img src="photo1.jpg" alt=""><img src="photo2.jpg" alt=""><img src="photo3.jpg" alt="">
+        <img src="photo4.jpg" alt=""><img src="photo5.jpg" alt=""><img src="photo6.jpg" alt="">
+        <img src="photo7.jpg" alt=""><img src="photo8.jpg" alt=""><img src="photo9.jpg" alt="">
+        <img src="photo10.jpg" alt=""><img src="photo11.jpg" alt=""><img src="photo12.jpg" alt="">
+        <img src="photo13.jpg" alt=""><img src="photo14.jpg" alt=""><img src="photo15.jpg" alt="">
+        <img src="photo16.jpg" alt=""><img src="photo17.jpg" alt=""><img src="photo18.jpg" alt="">
+        <img src="photo19.jpg" alt=""><img src="photo20.jpg" alt=""><img src="photo21.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2 class="section-title">BOOK YOUR APPOINTMENT</h2>
+      <div class="booking-widget card card--dark" id="booking-widget"></div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">CLIENT REVIEWS</h2>
+      <div class="reviews-widget card card--dark" id="reviews-widget"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">CONTACT</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Ken Kries BarberTruck Sàrl</h3>
+          <p>15, rue de la Poste</p>
+          <p>L-4647 Differdange</p>
+          <p>Luxembourg</p>
+        </div>
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Tel: <a href="tel:+352691111463">+352 691 111 463</a></p>
+          <p>Email: <a href="mailto:info@barbertruck.lu">info@barbertruck.lu</a></p>
+        </div>
+        <div class="contact-info">
+          <h3>Business Info</h3>
+          <p><strong>RCS:</strong> B 223527</p>
+          <p><strong>VAT:</strong> LU 30462567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ken Kries BarberTruck Sàrl. All rights reserved.</p>
+      <p class="credit">website build / designed by <a href="https://tta.lu" target="_blank" rel="noopener">the thinking agency</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
